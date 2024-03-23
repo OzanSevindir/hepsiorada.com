@@ -1,0 +1,69 @@
+// products.pug
+
+doctype html
+html
+  head
+    title Hepsi Orada
+    style.
+      /* Add CSS styling here */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 30px;
+        color: #333;
+      }
+      table {
+        width: 80%;
+        margin: 0px auto;
+        border-collapse: collapse;
+        background-color: #fff;
+      }
+      th, td {
+        padding: 15px;
+        text-align: left;
+        border-right: 2px solid #d3c6c6; /* Add vertical bars */
+        position: relative;
+      }
+      th:first-child,
+      td:first-child {
+        border-left: 3px solid #ddd; /* Add vertical bars */
+      }
+      th {
+        background-color: #3498db;
+        color: #fff;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      tr:not(:last-child) td {
+        border-bottom: 1px solid #ddd;
+      }
+      tr:hover {
+        background-color: #dbc024;
+      }
+      td:last-child {
+        font-style: italic;
+        border-right: 3px solid #ddd; /* Remove vertical bar for last column */
+      }
+  body
+    h1 Products
+    table
+      thead
+        tr
+          th Name
+          th Price
+          th Category
+      tbody
+        each product in products
+          tr
+            td
+              a(href=`http://localhost:3000/product/${product.id}`)= product.name 
+            td 
+              a(href=`http://localhost:3000/product/${product.id}`)= product.price
+            td 
+              a(href=`http://localhost:3000/product/${product.id}`)= product.category ? product.category.name : 'N/A'
