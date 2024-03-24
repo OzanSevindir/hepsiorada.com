@@ -1,0 +1,23 @@
+[33mcommit db8fae744b4c53fcb44ada0320390e44547433bb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Ozan Sevindir <edipozan34@gmail.com>
+Date:   Sat Mar 23 21:00:28 2024 +0300
+
+    site name back without staging and terminal command
+
+[33mcommit 0b7fbbab42baac96164767f8c00705ae6a1d6ec5[m
+Author: Ozan Sevindir <edipozan34@gmail.com>
+Date:   Sat Mar 23 20:57:14 2024 +0300
+
+    Commit site name with no staging
+
+[33mcommit 641452061bce2f35ed61aefeb1f723be442f8649[m
+Author: Ozan Sevindir <edipozan34@gmail.com>
+Date:   Sat Mar 23 20:54:39 2024 +0300
+
+    Site name changed
+
+[33mcommit c47ad91c313a74e7ecc949121da25167c0f7d4c2[m
+Author: Ozan Sevindir <edipozan34@gmail.com>
+Date:   Sat Mar 23 20:50:20 2024 +0300
+
+    First Commit
